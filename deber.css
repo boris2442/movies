@@ -2,6 +2,7 @@
   margin: 0;
   box-sizing: border-box;
   padding: 0;
+  font-family: cursive;
 }
  body{
     background-color: black;
@@ -52,26 +53,27 @@ ul li a {
   width: 100%;
    height: 100vh; 
   border-radius: 20px;
-  background-size: cover;
-  background: url("./home-01-avengers.jpg");
+  
+  background: url("./home-01-avengers.jpg")  center;
 }
 .father-circle{
-  /* position: relative; */
+ 
   display: grid;
-  position: fixed;
-  justify-content: space-between;
+  
+ 
   width: 100%;
-  animation:animation 1s linear infinite;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  animation:animation 4s linear infinite;
 }
 .circle{
   width: 70px;
   height: 70px;
-  z-index: -1;
+  z-index: -10;
+  opacity: 0.7;
   left: 40px;
-  /* position: absolute; */
+  
   border-radius: 50%;
-  /* color:red; */
+ 
   background-color: #fff;
 }
 @keyframes animation{
@@ -79,8 +81,14 @@ ul li a {
     right: 0;
     transform: translateX(50px);
   }
+  25%{
+ transform: translateY(100px);
+  }
   50%{
-    transform: rotateY('100deg');
+    transform: rotate('100deg');
+  }
+  70%{
+    top: 50%;
   }
   100%{
     transform: translateX(-50%);
@@ -173,19 +181,25 @@ form {
 
 input {
   width: 400px;
-  /* height: 30px; */
-  /* text-align: center; */
+ 
+ 
   color: red;
   cursor: pointer;
-  /* padding-left: 50px; */
+
   justify-content: center;
-  /* border-radius: 10px; */
+ transition: 1s ease-in-out;
   font-size: 1rem;
   align-items: center;
+}
+input:hover{
+  background-color: red;
+
 }
 textarea{
 width: 31.7%;
 height: 80px;
+font-weight: bold;
+
 }
 textarea::placeholder{
  margin: 0 auto;
