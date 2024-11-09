@@ -156,10 +156,29 @@ ul li a {
 .next {
   font-size: 3rem;
   text-align: center;
+  position: relative;
   color: red;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: #fff;
   display: block;
+}
+.next::after{
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 50%;
+  background-color: red;
+  font-weight: bold;
+  bottom: 30px;
+}
+.next::before{
+  content:"";
+  position: absolute;
+  background-color: red;
+  height: 2px;
+  left: -220px;
+  bottom: 30px;
+  width: 50%;
 }
 .bottom {
  
