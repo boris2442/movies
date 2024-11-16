@@ -46,9 +46,14 @@ ul li a {
 .connexion {
   background-color: red;
   border: 1px solid red;
-  padding: 5px;
+  padding: 5px 10px;
+  transition: 0.9s ease-in-out;
   border-radius: 6px;
  
+}
+.connexion:hover{
+  transform: scale(0.5);
+  background-color: black;
 }
 #section1 {
   width: 100%;
