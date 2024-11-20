@@ -132,6 +132,12 @@ ul li a {
 
   border-radius: 15px;
 }
+img{
+  transition: 1s ease-in-out;
+}
+img:hover{
+  transform: rotateY(180deg);
+}
 #section2 {
   background-color: black;
   color: #fff;
