@@ -168,6 +168,7 @@ img:hover{
   text-align: center;
   position: relative;
   color: red;
+  transition: 1s ease-in-out;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: #fff;
   display: block;
@@ -189,6 +190,10 @@ img:hover{
   left: -220px;
   bottom: 30px;
   width: 50%;
+}
+.next:hover{
+  transform: scale(0.9);
+  border-radius: 15px;
 }
 .bottom {
  
