@@ -72,7 +72,9 @@ header div{
 }
 header .bars{
   color:#fff;
-display: none;
+/* display: none; */
+top: -30px;
+position: absolute;
   font-size: 1.9rem;
 }
 .home {
@@ -351,7 +353,7 @@ form{
   font-size: 1.9rem;
   display: none;
 }
-@media  screen and (max-width:670px) {
+@media  screen and (max-width:750px) {
   
   header div .bars{
     display: block;
