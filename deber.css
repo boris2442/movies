@@ -29,12 +29,12 @@ header div a{
   color:#fff;
 }
 ul {
-  /* justify-content: space-between; */
+
   display: flex;
   color: white;
   gap:30px;
  
-  /* font-family: cursive; */
+
   font-weight: bold;
   text-align: center;
 }
@@ -78,7 +78,7 @@ display: none;
 .home {
   color: red;
   font-weight: bold;
-  font-family: cursive;
+
 }
 .connexion {
   background-color: red;
@@ -94,7 +94,7 @@ display: none;
 }
 h1{
 padding-top: 60px;
-font-family: "Jaro", sans-serif;
+
 font-optical-sizing: auto;
 font-weight: 400;
 font-style: normal;
@@ -159,10 +159,10 @@ font-style: normal;
   text-align: center;
   justify-content: center;
  
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 .first-h2 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
   font-size: 40px;
   color: #fff;
   text-align: center;
@@ -213,7 +213,7 @@ img:hover{
   position: relative;
   color: red;
   transition: 1s ease-in-out;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
   background-color: #fff;
   display: block;
 }
@@ -247,7 +247,7 @@ img:hover{
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 .new {
   color: red;
@@ -352,12 +352,13 @@ form{
   display: none;
 }
 @media  screen and (max-width:670px) {
+  
   header div .bars{
     display: block;
     color:#fff;
     cursor: pointer;
     position: absolute;
-    top: 40px;
+    /* top: 20px; */
     padding-top: 0px;
     align-items: center;
     display: flex;
