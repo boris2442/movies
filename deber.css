@@ -358,8 +358,9 @@ form{
     color:#fff;
     cursor: pointer;
     position: absolute;
-    /* top: 20px; */
-    padding-top: 0px;
+    top: 40px;
+    padding-top: -10px;
+    align-items: center;
     align-items: center;
     display: flex;
   }

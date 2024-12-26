@@ -44,4 +44,4 @@ window.addEventListener("scroll", ()=>{
     navigation.classList.remove("active") 
     menu.style.display='block'
     remov.classList.remove("rem2") 
-})
+});
