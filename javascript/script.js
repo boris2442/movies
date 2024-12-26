@@ -26,4 +26,22 @@ sr.reveal(".footer-text, .section3, .section2, .section1", {interval:200})
 
 const menu=document.querySelector(".bars");
 const navigation=document.querySelector("header ul");
-menu
+const remov=document.querySelector(".rem")
+menu.addEventListener("click", ()=>{
+    navigation.classList.add("active")
+    // menu.classList.remove("bars")
+    remov.classList.add("rem2")
+    menu.style.display='none'
+    
+});
+remov.addEventListener("click", ()=>{
+    navigation.classList.remove("active")
+    menu.style.display='block'
+    remov.classList.remove("rem2")
+});
+
+window.addEventListener("scroll", ()=>{
+    navigation.classList.remove("active") 
+    menu.style.display='block'
+    remov.classList.remove("rem2") 
+})

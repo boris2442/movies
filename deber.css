@@ -346,7 +346,11 @@ form{
     
 } 
 
-
+/* partie javascript scroll */
+.rem{
+  font-size: 1.9rem;
+  display: none;
+}
 @media  screen and (max-width:670px) {
   header div .bars{
     display: block;
@@ -366,9 +370,18 @@ form{
     height: 400px;
     background-color: black;
     left: -100%;
+    transition: 0.7s ease-in-out;
     flex-direction: column;
   }
   .active{
     left: 0;
+    transition: 0.7s ease-in-out;
+  }
+  .rem2{
+    display: block;
+    position: absolute;
+    top: 40px;
+    cursor: pointer;
   }
 }
+
