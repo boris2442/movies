@@ -18,7 +18,7 @@ const sr=ScrollReveal({
     distance:"30px",
     reset:true
 })
-sr.reveal(".footer-text, .section3, .section2, .section1", {interval:200})
+sr.reveal(".footer-text, .section3, .section2, .section1, .newsletter", {interval:200})
 
 
 
@@ -45,3 +45,26 @@ window.addEventListener("scroll", ()=>{
     menu.style.display='block'
     remov.classList.remove("rem2") 
 });
+
+
+// ajout du style au scroll
+const sections=document.querySelectorAll("section");
+const links=document.querySelectorAll("header ul li a");
+
+const scrollActive=()=>{
+    sections.forEach(section=>{
+        let top=section.offsetTop;
+        let height=section.offsetHeight;
+        let scrolls=window.scrollY;
+        let id=section.getAttribute("id")
+        if(scrolls >= top - 100 && scrolls<top + height){
+            links.forEach(link=>{
+                link.classList.remove("active-scroll")
+            })
+            let recuperationId=document.querySelector(`header ul li a[href*=${id}]`)
+            recuperationId.classList.add("active-scroll")
+        }
+    })
+}
+
+window.addEventListener("scroll", scrollActive)
