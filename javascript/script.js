@@ -65,6 +65,12 @@ const scrollActive=()=>{
             recuperationId.classList.add("active-scroll")
         }
     })
-}
+};
 
-window.addEventListener("scroll", scrollActive)
+window.addEventListener("scroll", scrollActive);
+
+// chargement du site
+window.onload = function() {
+    document.querySelector('.loader').style.display = 'none';
+    document.querySelector('.loader').style.transition='5s ease-out'
+  };
