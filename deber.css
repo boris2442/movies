@@ -5,7 +5,7 @@
   outline: none;
   text-decoration: none;
   scroll-behavior: smooth;
-  font-family:'Parkinsans', cursive;
+  font-family:'Parkinsans' 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, cursive;
 }
  body{
     background-color: black;
